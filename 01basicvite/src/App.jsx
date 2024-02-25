@@ -1,4 +1,5 @@
 import Para from './Para';
+import React from 'react';
 
 function Para1(){
   return(
@@ -12,12 +13,14 @@ const anotherElement = (
   <a href="www.google.com">Click Me</a>
 )
 
+const newElement = React.createElement('a',{href:'www.google.com', target:'_blank'}, 'Click me 1')
+
 function App() {
 
 
   return (
-    
-    anotherElement
+    newElement
+
     
   )
 }
